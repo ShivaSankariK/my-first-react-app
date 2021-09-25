@@ -1,7 +1,59 @@
 .App {
   text-align: center;
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  
+  font-family: sans-serif;
+}
+.menubar {
+    background-color: rgb(88 47 143);
+    text-align: center;
 
+}
+.menubar nav {
+  display: inline-flex;
+  list-style: none;
+  color: white;
+}
+.menubar nav li {
+  width: 250px;
+  margin: 15px;
+  padding: 15px;
+}
+.menubar nav li a {
+  text-decoration: none;
+  color:white;
+}
+.active, .menubar nav li:hover{
+  background-color: rgb(180 80 255);
+  border-radius: 3px;
+}
+.submenu1, .submenu2{
+  display: none;
+}
+.menubar nav li:hover .submenu1{
+  display: block;
+  position: absolute;
+  background-color: rgb(88 47 143);
+  margin-top: 15px;
+  margin-left: -30px;
+}
+.menubar nav li:hover .submenu1 nav{
+  display: block;
+  margin: 10px 0 10px 0;
+}
+.hoverme:hover .submenu2{
+  display: block;
+  position: absolute;
+  background-color: rgb(88 47 143);
+  margin-top: -50px;
+  margin-left: 250px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
